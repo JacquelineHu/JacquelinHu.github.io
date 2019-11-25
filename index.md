@@ -13,9 +13,9 @@ As a biomedical engineering student, I'd like to brige engineering and medicine.
 ## Getting started
 I may post my blog either in English or in Chinese. This is because on the one hand my classes are sometimes in English so I use English to take notes. On the other hands, I also want my parents and friends can know what I'm writing, so I use Chinese. Ok! Let's get started!
 
-* [Blog]{Blog} --- My Blog
-* [Projects]{Projects} --- The projects I've done before.
-* [Resume]{Resume} ---About me
+* [Blog] --- My Blog
+* [Projects]--- The projects I've done before.
+* [Resume]---About me
 
 [Blog]: blog
 [Projects]: projects
