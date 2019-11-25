@@ -4,23 +4,19 @@ image: /assets/img/hydejack-8.png
 hide_description: true
 ---
 
-# Thank You
-Thank you for buying the PRO version of Hydejack! 🎉
+# Welcome to my Blog
 
-More than one year ago I was looking for a blogging platform but couldn't find it:
-One that would let me write posts in markdown, with my own editor, one that didn't look awful buy modern design standards, and one that felt snappy on a mobile phone.
-That and more is now Hydejack. I hope you enjoy it [as much as I do](https://qwtel.com/).
+I've been trying to trying to write down interesting things in my blog. Here, you can find want I learned, what I thought, and what I did.
 
-## First Steps
-Please start by reading the [Documentation]{:.heading.flip-title}.
-Specifically, the chapters below should be relevant now:
+As a biomedical engineering student, I'd like to brige engineering and medicine. And I would also like to make technology useful to change the world, and meanwhile easier to understand. I hope you can enjoy it as much as I do!
 
-* [Install]{:.heading.flip-title} --- How to install and run Hydejack.
-* [Upgrade]{:.heading.flip-title} --- You can skip this if you haven't used Hydejack before.
-* [Config]{:.heading.flip-title} --- Once Jekyll is running you can start with basic configuration.
-{:.related-posts.faded}
+## Getting started
+I may post my blog either in English or in Chinese. This is because on the one hand my classes are sometimes in English so I use English to take notes. On the other hands, I also want my parents and friends can know what I'm writing, so I use Chinese. Ok! Let's get started!
 
-[documentation]: docs/README.md
-[install]: docs/install.md
-[upgrade]: docs/upgrade.md
-[config]: docs/config.md
+* [Blog]{Blog} --- My Blog
+* [Projects]{Projects} --- The projects I've done before.
+* [Resume]{Resume} ---About me
+
+[Blog]: blog
+[Projects]: projects
+[Resume]: resume
