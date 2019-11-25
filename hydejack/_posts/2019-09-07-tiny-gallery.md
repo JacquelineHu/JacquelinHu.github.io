@@ -81,7 +81,7 @@ I first started to learn Photoshop when I was a freshman in college. I joined th
   
 ### Class 25
 <div align="center">
-  <img src="assets/img/blog/25_logo1.jpg" height="300" width="600">
+  <img src="/assets/img/blog/25_logo1.jpg" height="300" width="600">
   <p><font size="2">2018.02 我们的25班</font></p>
 </div>             
 
