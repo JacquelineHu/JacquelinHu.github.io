@@ -13,9 +13,9 @@ basics:
     My major is Biomedical engineering while my research interest focuses on biomedical imaging / radiology, especially MRI. 
     Sequence design, 3D imaging, dynamic imaging are fields that I want to probe into.
     Besides, I'm also interested in image processing, including machine learning, computer-aid diagnoses concerning neural diseases.
-    Now I'm looking forward to pursuing my graduate study in biomedical imaging or image processing.
-    
-    For more project information, please visit my <a href="https://jacquelinehu.github.io/projects/"> Project</a>
+    Now I'm looking forward to pursuing my graduate study in biomedical imaging or image processing.  
+      
+    For more project information, please visit my <a href="https://jacquelinehu.github.io/projects/"> Projects</a>
 
   location:
     address: "Shanghai Jiao Tong University, Minhang District"
@@ -41,6 +41,7 @@ work:
       The duty of Center for Publicity and Design is to produce posters, videos and souvenir suits for our activity.
     highlights:
       - "Organized 2 summer social activity a 1 winter social activity, where thousands of students took part every year"
+      - "Several<a href=" https://jacquelinehu.github.io/blog/hydejack/2019-09-07-tiny-gallery/">graphic design works</a> for the publicity of the social activity"
 #    highlights:
 #      - "Organized 2 summer social activity a 1 winter social activity, where thousands of students took part every year"
 #      - "Several<a href=" https://jacquelinehu.github.io/blog/hydejack/2019-09-07-tiny-gallery/">graphic design works</a> for the publicity of the social activity"
@@ -71,7 +72,7 @@ education:
 awards:
   - title: "Fan Hsu-chi Scholarship"
     date: "2018-12-01"
-#    awarder: "Techcrunch"
+    awarder: "President Fan"
     summary: "10 winners university-wide, 10,000 RMB per year"
 #publications:
 #  - name: "Video compression for 3d media"
