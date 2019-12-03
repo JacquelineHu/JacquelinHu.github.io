@@ -9,7 +9,7 @@ screenshot: /assets/img/projects/hy-img.svg
 #    url: https://hydecorp.github.io/hy-img/
 #  - title: Source
 #    url: https://github.com/hydecorp/hy-img
-caption: Lazy-loading images with cancellation
+caption: A modified geodesic regression model
 description: >
   A modified geodesic model for characterizing a long term evolution of subcortical structures such as entorhinal cortex (ERC)
 accent_color: '#4fb1ba'
@@ -18,4 +18,4 @@ accent_image:
   overlay:    true
 ---
 
-## Background
+# Characterizing the evolution of entorhinal cortex in AD patients
