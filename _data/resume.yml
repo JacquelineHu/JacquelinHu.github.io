@@ -34,13 +34,13 @@ work:
   - company: "Department of Social Practice"
     position: "Director of Center for Publicity and Design"
 #    website: ""
-    startDate: "2017-04"
-    endDate: "2018-09"
+    startDate: "2017-04-01"
+    endDate: "2018-09-01"
     summary: >
       Department of Soical Practice is a student organization where we arrange the university-wide summer & winter soical practice every year.
       The duty of Center for Publicity and Design is to produce posters, videos and souvenir suits for our activity.
     highlights:
-      - "Awarded 'Excellent volunteer'"
+      - "Organized 2 summer social activity a 1 winter social activity, where thousands of students took part every year"
 #    highlights:
 #      - "Organized 2 summer social activity a 1 winter social activity, where thousands of students took part every year"
 #      - "Several<a href=" https://jacquelinehu.github.io/blog/hydejack/2019-09-07-tiny-gallery/">graphic design works</a> for the publicity of the social activity"
@@ -70,7 +70,7 @@ education:
       - "Anatomy and Physiology"
 awards:
   - title: "Fan Hsu-chi Scholarship"
-    date: "2018-2019"
+    date: "2018-12-01"
 #    awarder: "Techcrunch"
     summary: "10 winners university-wide, 10,000 RMB per year"
 #publications:
