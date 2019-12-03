@@ -21,5 +21,6 @@ accent_image:
 # Characterizing the evolution of entorhinal cortex in AD patients
 
 ## Abstract
-    Early anatomic change of the entorhinal cortex (ERC) provides us with information about the potential pathological structural deformation due to the Alzheimer’s Disease. To better understand the personalized pathological change in ERC, we first describe a mean deformation trend of ERC over a long period of time as a prior distribution using geodesic regression. Then we modify the basic geodesic regression model to investigate the personalized deviation from the mean deformation trend. The result shows that more atrophy and thickness reduction happen in the ERC in subjects who have mild cognitive impairment than normal population.
+
+Early anatomic change of the entorhinal cortex (ERC) provides us with information about the potential pathological structural deformation due to the Alzheimer’s Disease. To better understand the personalized pathological change in ERC, we first describe a mean deformation trend of ERC over a long period of time as a prior distribution using geodesic regression. Then we modify the basic geodesic regression model to investigate the personalized deviation from the mean deformation trend. The result shows that more atrophy and thickness reduction happen in the ERC in subjects who have mild cognitive impairment than normal population.
 
