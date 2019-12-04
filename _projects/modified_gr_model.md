@@ -64,4 +64,4 @@ Then we have a trajectory describing a patient's ERC over two years. In order to
 
 ### Average Velocity fields
 Our approach to average the velocity fields is a spatiotemporal statistical processing of the longitudinal data [6]. At each time point, we measure the velocity of each subject i on every vertex and then map the velocity field into a standardized dense grid, in which j stands for every grid point. Our time synchronization is based on the subjects’ birthdays. 
-$$\overline u_j (t) = avg(\sum_{i}{u_{ij}(t)}$$
+$$ \overline u_j (t) = avg(\sum_{i}{u_{ij}(t)} $$
