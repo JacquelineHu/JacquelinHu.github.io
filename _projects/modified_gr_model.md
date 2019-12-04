@@ -45,7 +45,7 @@ We describe the deformation of each subject’s time-varying ERC templates as a 
 The Alzheimer’s Disease Neuroimaging Initiative(adni.loni.usc.edu) has provided us with a bunch of longitudinal MRI brain scans of normal/control subjects and MCI/non-control subjects. Subjects included in this dataset were in their 60s to 70s when scanned. Most of their scans were acquired at 6, 12, and 24 months after the baseline. People have segmented the scans manually to get triangulated entorhinal cortex templates of subjects in each group. Templates have already been rigidly aligned to its baseline then all onto the baseline of one single subject. An example set of templates of one subject is shown in **Fig.1**
 
 ![orignial scans](/assets/img/projects/original_scans.png)
-<center><font> Fig.1. Orignial segmented ERC of one patient acquired at baseline(left) and 6, 12, 24(right) months after
+<center><font> Fig.1. Orignial segmented ERC of one patient acquired at baseline(left) and 6, 12, 24(right) months after</font></center>
 
 ### Rigid registration
 We only want to measure the non-rigid deformation of the ERC, and thus we apply rigid registration to eliminate the rigid part as much as possible. Each patient's templates were all previously registered to their baseline and all patients' baselines were aligned with a specific baseline. On the top of that, we also optimize some rigid motion parameters including translation and rotation while computing the geodesic trajectories. Since the points in the templates have no one-to-one correspondence over time, our registration is based on **current matching algorithm**[4].
@@ -56,7 +56,7 @@ Even though the consistency of the segmentation can be assured, we cannot avoid 
 To deal with this problem, we use **geodesic regression** [5] to fit in the time-varying ERC templates. What geodesic regression does is to deform a template over time to match the target templates at each moment but still make sure the deformation remains smooth. Mathematically, we give each vertex of the triangulated ECR templates an initial velocity and have it shot with time. Then a smoothing filter is applied to assure the smoothness of the deformation. And finally, we optimize the initial velocity using machine learning based on declining the difference energy and regularization loss between the deformed templates and the target templates with current matching algorithm [4]. How a deformed template is changing over time to match the original scans is shown in **Fig.2** . 
 
 ![deforming_animation](/assets/img/projects/movie_combined.gif)
-<center><font size="2"> Fig.2. Deformed templates(green) shooting towards targets(red). 
+<center><font size="2"> Fig.2. Deformed templates(green) shooting towards targets(red).</font></center> 
 
 Then we have a trajectory describing a patient's ERC over two years. In order to test the accuracy of the trajectory, we sample it at the time when the original scans were acquired and do comparasion as shown in **Fig.3**.
 ![templates&overlay](/assets/img/projects/templates_overlay.jpg)
