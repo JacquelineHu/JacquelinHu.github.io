@@ -57,9 +57,11 @@ To deal with this problem, we use **geodesic regression** [5] to fit in the time
 
 ![deforming_animation](/assets/img/projects/movie_combined.gif)
 <center><font size="2"> Fig.2. Deformed templates(green) shooting towards targets(red).</font></center> 
-
+<br>
 Then we have a trajectory describing a patient's ERC over two years. In order to test the accuracy of the trajectory, we sample it at the time when the original scans were acquired and do comparasion as shown in **Fig.3**.
 ![templates&overlay](/assets/img/projects/templates_overlay.jpg)
 <center><font size="2"> Fig.3. Longitudinal entorhinal cortex target templates(red) and deformed templates overlay(blue) using geodesic regression. (A) Baseline scan. (B-D) Target templates and deformed templates in 6 months, 12 months and 24 moths after the baseline scan respectively. </font></center>
 
-  
+### Average Velocity fields
+Our approach to average the velocity fields is a spatiotemporal statistical processing of the longitudinal data [6]. At each time point, we measure the velocity of each subject i on every vertex and then map the velocity field into a standardized dense grid, in which j stands for every grid point. Our time synchronization is based on the subjects’ birthdays. 
+$$\overline u_j (t) = avg(\sum_{i}{u_{ij}(t)}$$
