@@ -96,9 +96,9 @@ Building up a library displaying the evolution of our brain has always been drea
 The model used in the project can also be extended to other brain structures to obtain a valuable description on the evolution of our brains, which can be also known as prior distribution of brain deformation.
 
 ## Reference
-[1] Atiya M., Hyman B.T., Albert M.S., Killiany R. Structural magnetic resonance imaging in established and prodromal Alzheimer disease: a review. Alzheimer Dis Assoc Disord. 2003;17:177–195.
-[2] Miller, M. I. , Younes, L. , Ratnanather, J. T. , Brown, T. , Trinh, H. , & Postell, E. , et al. (2013). The diffeomorphometry of temporal lobe structures in preclinical alzheimer\"s disease. NeuroImage: Clinical, 3, 352-360.
-[3] Lorenzi M, Pennec X, Frisoni G B, et al. Disentangling normal aging from Alzheimer's disease in structural magnetic resonance images.[J]. Neurobiology of Aging, 2015, 36:S42-S52.
-[4] Vaillant M, Glaunès J. Surface Matching via Currents[C] Biennial International Conference on Information Processing in Medical Imaging. 2005.
-[5] Fletcher P T . Geodesic Regression and the Theory of Least Squares on Riemannian Manifolds[J]. International Journal of Computer Vision, 2013, 105(2):171-185.
+[1] Atiya M., Hyman B.T., Albert M.S., Killiany R. Structural magnetic resonance imaging in established and prodromal Alzheimer disease: a review. Alzheimer Dis Assoc Disord. 2003;17:177–195.  
+[2] Miller, M. I. , Younes, L. , Ratnanather, J. T. , Brown, T. , Trinh, H. , & Postell, E. , et al. (2013). The diffeomorphometry of temporal lobe structures in preclinical alzheimer\"s disease. NeuroImage: Clinical, 3, 352-360.  
+[3] Lorenzi M, Pennec X, Frisoni G B, et al. Disentangling normal aging from Alzheimer's disease in structural magnetic resonance images.[J]. Neurobiology of Aging, 2015, 36:S42-S52.  
+[4] Vaillant M, Glaunès J. Surface Matching via Currents[C] Biennial International Conference on Information Processing in Medical Imaging. 2005.  
+[5] Fletcher P T . Geodesic Regression and the Theory of Least Squares on Riemannian Manifolds[J]. International Journal of Computer Vision, 2013, 105(2):171-185.  
 [6] Durrleman S, Pennec X, Trouvé A, et al. Toward a comprehensive framework for the spatiotemporal statistical analysis of longitudinal shape data.[J]. International Journal of Computer Vision, 2013, 103(1):22-59.   
