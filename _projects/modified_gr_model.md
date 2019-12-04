@@ -44,7 +44,7 @@ We describe the deformation of each subject’s time-varying ERC templates as a 
 ### Subjects
 The Alzheimer’s Disease Neuroimaging Initiative(adni.loni.usc.edu) has provided us with a bunch of longitudinal MRI brain scans of normal/control subjects and MCI/non-control subjects. Subjects included in this dataset were in their 60s to 70s when scanned. Most of their scans were acquired at 6, 12, and 24 months after the baseline. People have segmented the scans manually to get triangulated entorhinal cortex templates of subjects in each group. Templates have already been rigidly aligned to its baseline then all onto the baseline of one single subject. An example set of templates of one subject is shown in **Fig.1**
 
-![orignial scans](/assets/img/projects/original scans.png)
+![orignial scans](/assets/img/projects/original_scans.png)
 <center><font> Fig.1. Orignial segmented ERC of one patient acquired at baseline(left) and 6, 12, 24(right) months after
 
 ### Rigid registration
