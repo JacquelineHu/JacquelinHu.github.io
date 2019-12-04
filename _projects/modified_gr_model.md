@@ -47,11 +47,11 @@ The Alzheimer’s Disease Neuroimaging Initiative(adni.loni.usc.edu) has provide
 ### Geodesic Regression
 Even though the consistency of the segmentation can be assured, we cannot avoid the noise while segmenting. Therefore, the segmented templates are not exactly accurate. The problem is that the deformation of the time-varying templates may not be smooth as what it should be in the reality, which means, the shape of the templates may change in opposite directions over time. 
 
-To deal with this problem, we use **geodesic regression** [4] to fit in the time-varying ERC templates. What geodesic regression does is to deform a template over time to match the target templates at each moment but still make sure the deformation remains smooth. Mathematically, we give each vertex of the triangulated ECR templates an initial velocity and have it shot with time. Then a smoothing filter is applied to assure the smoothness of the deformation. And finally, we optimize the initial velocity base on declining the difference energy and regularization loss between the deformed templates and the target templates based on current matching [5]. The comparison between original scans and deformed templates is shown in **Fig.1** . 
+To deal with this problem, we use **geodesic regression** [4] to fit in the time-varying ERC templates. What geodesic regression does is to deform a template over time to match the target templates at each moment but still make sure the deformation remains smooth. Mathematically, we give each vertex of the triangulated ECR templates an initial velocity and have it shot with time. Then a smoothing filter is applied to assure the smoothness of the deformation. And finally, we optimize the initial velocity using machine learning based on declining the difference energy and regularization loss between the deformed templates and the target templates with current matching algorithm [5]. The comparison between original scans and deformed templates is shown in **Fig.1** . 
 
-<div align="center">
-  <img src="/assets/img/projects/templates_overlay.jpg">
-</div>
-<center><font size="2"> **Fig.1** Longitudinal entorhinal cortex target templates(red) and deformed templates overlay(blue) using geodesic regression. (A) Baseline scan. (B-D) Target templates and deformed templates in 6 months, 12 months and 24 moths after the baseline scan respectively. </font></center>
+![deforming_animation]("/assets/img/projects/movie_combined.gif")
+
+![templates&overlay]("/assets/img/projects/templates_overlay.jpg")
+<center><font size="2"> Fig.1. Longitudinal entorhinal cortex target templates(red) and deformed templates overlay(blue) using geodesic regression. (A) Baseline scan. (B-D) Target templates and deformed templates in 6 months, 12 months and 24 moths after the baseline scan respectively. </font></center>
 
   
