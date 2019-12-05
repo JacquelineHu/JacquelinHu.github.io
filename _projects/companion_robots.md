@@ -56,7 +56,7 @@ One is not enough! Since each iFamily has their own symbol, why not let them cha
 We use **socket** to implement speech transimission between robots for scene reproduction. Once the elderly are recalling something interesting that has been recorded in these robots, they would automatically play a small theater in front of the elderly!
 
 ### Video call
-iFamily provide video call via webbrowser. However, since it is already very convinient to have video call via multiple social media, we plan to modify this function on iFamily to a safety mornitor, which means, when the elderly are experiencing any emergency, the real-time mornitering can be transmitted into the children's mobile phone after they press an emergency button.
+iFamily provides video call via webbrowser. However, since it is already very convenient to have video call via multiple social media, we plan to modify this function on iFamily to a safety mornitor, which means, when the elderly are experiencing any emergency, the real-time mornitering can be transmitted into the children's mobile phone after they press an emergency button.
 
 ## Brochure
 I designed a brochure for iFamily. Wish everyone repects their parents and wish all the old people be happy and healthy.
