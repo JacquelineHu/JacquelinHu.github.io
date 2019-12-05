@@ -34,9 +34,8 @@ We know that it is impratical to perform an infinitely long RF impulse. We cut i
 Therefore, we can see not all protons in the selected slice can be flipped exactly 180°, while those who are filpped bigger or smaller than 180°, will remain a transverse component on XOY plane. And eventually, this residual will induce an FID signal into signal acquisition.
 
 ## From FID signal to the fine line
-Then, what does the FID signal have anything to do with the fine line? Let's deduce their relationship step by step on MATLAB.
+Then, what does the FID signal have to do with the fine line? Let's deduce their relationship step by step on MATLAB.
 
-To make things easier, let's assume we are now imaging a homogenious object in the middle of the FOV.
-
+To make things easier, let's assume we are now imaging a homogeneous object in the middle of the FOV.
 ### Setting the parameters
 First, let's set some parameters of the object we are imaging and the image we are expecting to acquire.
