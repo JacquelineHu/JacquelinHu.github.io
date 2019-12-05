@@ -60,6 +60,6 @@ iFamily provides video call via webbrowser. However, since it is already very co
 
 ## Brochure
 I designed a brochure for iFamily. Wish everyone repects their parents and wish all the old people be happy and healthy.
-![brochure_front](/assets/img/projects/brochure_front.jpg)
 
+![brochure_front](/assets/img/projects/brochure_front.jpg)
 ![brochure_back](/assets/img/projects/brochure_back.jpg)
