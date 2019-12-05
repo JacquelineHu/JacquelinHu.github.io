@@ -10,7 +10,7 @@ tags: Radiology
 When I was doing the MRI spin-echo experiment, I found there was an obvious fine line at the middle of the final image we obtained
 (as shown above). Trust me, I was trying to image a peanut, maybe with some water at the bottom(the bright part). Yes, it is a peanut,
 imaged by an old weird MRI scanner with horribly inhomogeneous 0.5T magnetic field. However, even though the scanner was old, it should
-never be blamed for the fine line in the middle. Let's find out the true original of this artifact and exonerate the scanner.
+never be blamed for the fine line in the middle. Let's find out the true origin of this artifact and exonerate the scanner.
 
 ## Spin-echo Sequence
 To start with, let's have a brief look at what spin-echo(SE) sequence is.
