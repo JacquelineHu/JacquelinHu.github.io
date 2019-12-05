@@ -20,8 +20,8 @@ SE sequence is a widely used MRI sequence in clinical application. The main feat
 ![SE_sequence](/assets/img/blog/spin-echo-sequence.jpg)
 <center><font size="2">SE sequence</font></center>
 
-**Advantages of SE sequence**
-Theoretically, it can eliminate the extra phase dispersion due to magnetic field inhomogenity, which means, the time constant of transverse relaxation would be T2 instead of T2* in gradient-rephase sequence. Thus, the signal intensity will be higher during signal acquisition.
+**Advantages of SE sequence**  
+Theoretically, it can eliminate the extra phase dispersion due to magnetic field's inhomogenity, which means, the time constant of transverse relaxation would be T2 instead of T2* in gradient-rephase sequence. Thus, the signal intensity will be higher during signal acquisition.
 
 
 ## Imperfection of the 180° impulse
