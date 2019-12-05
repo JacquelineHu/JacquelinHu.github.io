@@ -28,7 +28,7 @@ Aging has grown to be a social problem in China. Survey shows that nearly 50% of
 ## Overall establishment
 Our robot is bulit with Raspberry Pi and peripherals covered by 3D printed shell. We use Python to implement functions such as speech interactions and video calls. Here I'll breifly introduce every section and its implementation:
 * <a href="#hardware">Hardware</a>  
-* <a href="#speech interaction-with-people">Speech interaction with people</a>  
+* <a href="#speech-interaction-with-people">Speech interaction with people</a>  
 * <a href="#speech-interaction-with-robots">Speech interaction with robots</a>  
 * <a href="#video-call">Video call</a>  
 
