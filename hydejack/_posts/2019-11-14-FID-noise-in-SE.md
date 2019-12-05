@@ -1,5 +1,5 @@
 ---
-title: MRI Notes: FID noise in SE sequence?
+title: MRI Notes - FID noise in SE sequence?
 image: /assets/img/blog/fine_line_artifact.jpg
 description: >
   Why there is a fine line in the MR image of SE sequence?
