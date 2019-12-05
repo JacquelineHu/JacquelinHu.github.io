@@ -1,7 +1,7 @@
 ---
 layout: list
 title: My Blog
-slug: hydejack
+slug: Hydejack
 description: >
   Record what I learn. Share what I know. Keep what I like.
 ---
