@@ -28,9 +28,9 @@ iFamily is an emotional companion robot for the elderly. To improve its connecti
 ## Overall establishment
 Our robot is bulit with Raspberry Pi and peripherals covered by 3D printed shell. We use Python to implement functions such as speech interactions and video calls. Here I'll breifly introduce every section and its implementation:
 * <a href="#hardware">Hardware</a>  
-* <a href="#speech interaction with people">Speech interaction with people</a>  
-* <a href="#speech interaction with robots">Speech interaction with robots</a>  
-* <a href="#video call">Video call</a>  
+* <a href="#speech interaction-with-people">Speech interaction with people</a>  
+* <a href="#speech-interaction-with-robots">Speech interaction with robots</a>  
+* <a href="#video-call">Video call</a>  
 
 ### Hardware
 * 3D printed shell
@@ -42,9 +42,22 @@ Our robot is bulit with Raspberry Pi and peripherals covered by 3D printed shell
 * External power supply
 ![hardware](/assets/img/projects/components.png)
 
-### Speach interaction
-* **Package: PyAudio on Python**: recording, voice activity detection and voice play back
+### Speech interaction with people
+Just as the common companion robots, iFamily can have normal communication with people with cute postures. They also have their personalized corpus in order to mimic the one they represent. This function is implemented on Python based on the following packages and processing procedure:
+* **Package: PyAudio**: recording & voice activity detection(VAD) & voice playback
 * **Package: RPi.GPIO**: actions implementation
-* **Baidu API**: automatic speech recognition and text-to-speech
-* **Turling API**: natural language generation
+* **Baidu API**: automatic speech recognition(ASR) & text-to-speech(TTS)
+* **Turling API**: natural language generation(NLG)
 
+### Speech interaction with robots
+One is not enough! Since each iFamily has their own symbol, why not let them chat with each other and reproduce those interesting scenes? 
+
+We use **socket** to implement speech transimission between robots for scene reproduction. Once the elderly are recalling something interesting that has been recorded in these robots, they would automatically play a small theater in front of the elderly!
+
+### Video call
+iFamily provide video call via webbrowser. However, since it is already very convinient to have video call via multiple social media, we plan to modify this function on iFamily to a safety mornitor, which means, when the elderly are experiencing any emergency, the real-time mornitering can be transmitted into the children's mobile phone after they press an emergency button.
+
+## Brochure
+I designed a brochure for iFamily. Wish everyone repects their parents and wish all the old people be happy and healthy.
+![brochure_front](/assets/img/projects/brochure_front.jpg)
+![brochure_back](/assets/img/projects/brochure_back.jpg)
