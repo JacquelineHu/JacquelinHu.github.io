@@ -23,7 +23,7 @@ accent_image:
 ## Background
 Aging has grown to be a social problem in China. Survey shows that nearly 50% of the elderly believe that the lack of children's companion is the biggest problem in elderly care. On the other hand, for those young people, living habits, age differences, work pressure and other resons decline their opportunities to communicate with their parents.
 
-iFamily is an emotional companion robot for the elderly. To improve its connectivity with the elderly emotionally, we conceive an idea of designing a personalized outlook which resembles the elderly's family. Here in our prototype, we manager to 3D print a cartoon outlook to represent our idea.
+**iFamily** is an emotional companion robot for the elderly. To improve its connectivity with the elderly emotionally, we conceive an idea of designing a personalized outlook which resembles the elderly's family. Here in our prototype, we manager to 3D print a cartoon outlook to represent our idea.
 
 ## Overall establishment
 Our robot is bulit with Raspberry Pi and peripherals covered by 3D printed shell. We use Python to implement functions such as speech interactions and video calls. Here I'll breifly introduce every section and its implementation:
@@ -61,4 +61,5 @@ iFamily provide video call via webbrowser. However, since it is already very con
 ## Brochure
 I designed a brochure for iFamily. Wish everyone repects their parents and wish all the old people be happy and healthy.
 ![brochure_front](/assets/img/projects/brochure_front.jpg)
+<br>
 ![brochure_back](/assets/img/projects/brochure_back.jpg)
