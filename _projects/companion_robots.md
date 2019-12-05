@@ -48,6 +48,7 @@ Just as the common companion robots, iFamily can have normal communication with 
 * **Package: RPi.GPIO**: actions implementation
 * **Baidu API**: automatic speech recognition(ASR) & text-to-speech(TTS)
 * **Turling API**: natural language generation(NLG)
+![procedure](/assets/img/projects/speech_procedure.jpg)
 
 ### Speech interaction with robots
 One is not enough! Since each iFamily has their own symbol, why not let them chat with each other and reproduce those interesting scenes? 
