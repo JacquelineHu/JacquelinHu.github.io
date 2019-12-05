@@ -11,7 +11,7 @@ screenshot: /assets/img/projects/companion_robots.jpg
 #    url: https://github.com/hydecorp/hy-push-state
 caption: Establish a companion robot on Raspberry Pi!
 description: >
-  Establish a companion robot for the elderly with 3D printed outlook and interacting functions.
+  Establish a companion robot on Python and Raspberry Pi.
 accent_color: '#4fb1ba'
 accent_image:
   background: 'linear-gradient(to bottom,#193747 0%,#233e4c 30%,#3c929e 50%,#d5d5d4 70%,#cdccc8 100%)'
@@ -22,3 +22,19 @@ accent_image:
 
 ## Background
 Aging has become an obvious social problem in China. Survey shows that nearly 50% of the elderly believe that the lack of children's companion is the biggest problem in elderly care. On the other hand, for those young people, living habits, age differences, work pressure and other resons decline their opportunities to communicate with their parents.
+
+iFamily is an emotional companion robot for the elderly. To improve its connectivity with the elderly emotionally, we conceive an idea of designing a personalized outlook which resembles the elderly's family. Here in our prototype, we manager to 3D print a cartoon outlook to represent our idea.
+
+## Overall establishment
+Our robot is bulit with Raspberry Pi and peripherals covered by 3D printed shell. We use Python to implement functions such as speech interactions and video calls. Here I'll breifly introduce every section and its implementation:
+<a href="#Hardware">Hardware</a>
+<a href="#Speech interaction with people">Speech interaction with people</a>
+<a href="#Speech interaction with robots">Speech interaction with robots</a>
+<a href="#Video call">Video call</a>
+
+### Hardware
+* Raspberry Pi 2B + <a href="https://www.raspberrypi.org/downloads/">NOOBS</a> + SD card 32G
+* Logitech camera
+
+![hardware](/assets/img/projects/components.png)
+
