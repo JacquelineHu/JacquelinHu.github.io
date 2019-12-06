@@ -38,7 +38,8 @@ Then, what does the FID signal have to do with the fine line? Let's deduce their
 
 ### Model
 To make things easier, let's assume we are now imaging a homogeneous object in the middle of the FOV. It is only a plane so there is no slice selection. Every while pixel would generate its own FID signal, but notice that **what we are doing is to produce the artifact of FID signal, not reconstructing this image**.
-![FID_model](/assets/img/blog/FID_model.jpg)
+
+![FID_model](/assets/img/blog/FID_model.jpg width="350")
 
 
 ### Setting the parameters
