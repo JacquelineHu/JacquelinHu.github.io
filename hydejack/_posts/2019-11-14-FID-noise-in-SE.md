@@ -86,7 +86,7 @@ FID = squeeze(sum(sum(FID_map))); % FID signal in one loop;
 figure;plot(t,FID);
 figure; plot(1:Nx,fftshift(fft(FID)));
 ``` 
-The plotted pictures are as follows:
+The plotted pictures are as follows:  
 1) The FID signal of a pixel
 ![FID_one_pixel](/assets/img/blog/FID_one_pixel.jpg)
 
@@ -111,8 +111,9 @@ imshow(fftshift(fft2(K)),[]);
 We also find that the line wasn't limited in the location of our object, and it also occurs in the dark area with lower magnitude. This is probably because there is a **spectrum leakage** while we are sampling the FID signal. The specific reason will not be explained in this article.
 
 ### Remove the artifact
-Then, what are we gonna do to remove the artifact? Here, I introduce a method to suppress this fine line artifact. 
+Then, what are we gonna do to remove the artifact? Here, I introduce a method to suppress this fine line artifact in imaging part.
 
+To suppress the impact of FID signal, we cannot let it "freely decay". So, after it is induced by the 180° impulse, we can apply an extra gradient to disperse the phase of FID.  
 
 
 
