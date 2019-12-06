@@ -40,9 +40,9 @@ To make things easier, let's assume we are now imaging a homogeneous object in t
 ### Setting the parameters
 First, let's set some parameters of the object we are imaging and the image we are expecting to acquire.
 
-'''
+```matlab
 clear all; clc;
 % Object
 gamma = 42.58; % MHz/T
 T2 = 300 % ms
-'''
+```
