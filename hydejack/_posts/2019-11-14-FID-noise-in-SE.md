@@ -64,3 +64,17 @@ BW = 1/ (ACQ/Nx); % kHz
 t = 0: ACQ/Nx: (ACQ-ACQ/Nx);
 Gx = BW * 1000 / gamma/ FOVx; % mT/m
 ```
+
+### generating FID signal
+We are going to generate a FID signal map of Nx * Ny * Time, where the first two dimensions stands for every pixel while the third dimension stands for time ( we sample Nx points in the time domain).
+
+1. Notice that our phase encoding is added before the 180° impulse, therefore, **the FID signal does not undergo phase encoding** 
+```matlab
+X = width/dy;
+Y = length/dx;
+w = padarray(gamma*Gx/1000*(-X/2:1:(X/2-1)),[0,(Nx-X)/2]); % kHz percession speed in X-direction
+w_map = repmat(w,Ny,1); % kHz percession speed of each pixel
+phase_map = repmat(w_map,1,1,Nx).*permute(repmat(t,Ny,1,Nx),[1,3,2]); % the third dimension is the phase of each time
+FID_map = cos(2*pi*phase_map).*exp(-permute(repmat(t,Ny,1,Nx),[1,3,2]/T2_star); % Nx * Ny *Time FID map with T2* decay
+FID = sum(sum(FID_map)); % FID signal in one loop;
+``` 
