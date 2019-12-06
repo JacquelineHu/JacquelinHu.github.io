@@ -39,9 +39,7 @@ Then, what does the FID signal have to do with the fine line? Let's deduce their
 ### Model
 To make things easier, let's assume we are now imaging a homogeneous object in the middle of the FOV. It is only a plane so there is no slice selection. Every while pixel would generate its own FID signal, but notice that **what we are doing is to produce the artifact of FID signal, not reconstructing this image**.
 
-<div align=center>
-<img src="/assets/img/blog/FID_model.jpg" width="350")
-</div>
+<div align="center"><img src="/assets/img/blog/FID_model.jpg" width="350"></div>
 
 ### Setting the parameters
 First, let's set some parameters of the object we are imaging and the image we are expecting to acquire.
@@ -93,10 +91,10 @@ The plotted pictures are as follows:
 ![FID_one_pixel](/assets/img/blog/FID_one_pixel.jpg)
 
 2) The sum of FID signals we acquire
-![Obtained_signal]((/assets/img/blog/FID_signal.jpg)
+![Obtained_signal](/assets/img/blog/FID_signal.jpg)
 
 3) 1D Fourier transformation of acquired signal
-![Fourier_transformation]((/assets/img/blog/fft_FID.jpg)
+![Fourier_transformation](/assets/img/blog/fft_FID.jpg)
 
 ### Image reconstruction
 OK, now we've got the sum of FID signals in one loop, which can fill in one row of the K-space. Since **our phase encoding is applied before FID signal's generation**, the FID signal won't change in each loop. Therefore, we can easily fill in the whole K-space. After 2D FFT, we can see the fine line in the reconstructed image.
