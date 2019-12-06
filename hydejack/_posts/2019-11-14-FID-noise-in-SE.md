@@ -98,7 +98,15 @@ The plotted pictures are as follows:
 
 ### Image reconstruction
 OK, now we've got the sum of FID signals in one loop, which can fill in one row of the K-space. Since **our phase encoding is applied before FID signal's generation**, the FID signal won't change in each loop. Therefore, we can easily fill in the whole K-space. After 2D FFT, we can see the fine line in the reconstructed image.
-![reconstruction]((/assets/img/blog/FID_image.jpg)
+```matlab
+K = squeeze(repmat(FID',Ny,1));
+figure;
+subplot(1,2,1);
+imshow(K,[]);
+subplot(1,2,2);
+imshow(fftshift(fft2(K)),[]);
+```
+![reconstruction](/assets/img/blog/FID_image.jpg)
 
 We also find that the line wasn't limited in the location of our object, and it also occurs in the dark area with lower magnitude. This is probably because there is a **spectrum leakage** while we are sampling the FID signal. The specific reason will not be explained in this article.
 
