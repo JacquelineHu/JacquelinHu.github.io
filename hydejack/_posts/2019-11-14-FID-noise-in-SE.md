@@ -36,7 +36,11 @@ Therefore, we can see not all protons in the selected slice can be flipped exact
 ## From FID signal to the fine line
 Then, what does the FID signal have to do with the fine line? Let's deduce their relationship step by step on MATLAB.
 
-To make things easier, let's assume we are now imaging a homogeneous object in the middle of the FOV. And the slice we select is only a plane so there is no slice selection.
+### Model
+To make things easier, let's assume we are now imaging a homogeneous object in the middle of the FOV. It is only a plane so there is no slice selection. Every while pixel would generate its own FID signal, but notice that **what we are doing is to produce the artifact of FID signal, not reconstructing this image**.
+![FID_model](/assets/img/blog/FID_model.jpg)
+
+
 ### Setting the parameters
 First, let's set some parameters of the object we are imaging and the image we are expecting to acquire.
 
@@ -47,14 +51,14 @@ clear all; clc;
 gamma = 42.58; % MHz/T
 T2 = 300; % ms
 T2_star = 15; % ms
-length = 90; % mm
-width = 90; % mm
+length = 180; % mm
+width = 180; % mm
 
 % Image parameters
 dx = 1.5; % mm  x_resolution
 dy = 1.5; % mm  y_resolution
-Nx = 128; % 128 x 128 pixels
-Ny = 128;
+Nx = 256; % 256 x 256 pixels
+Ny = 256;
 FOVx = Nx * dx; % mm
 FOVy = Ny * dy; % mm
 
@@ -65,16 +69,42 @@ t = 0: ACQ/Nx: (ACQ-ACQ/Nx);
 Gx = BW * 1000 / gamma/ FOVx; % mT/m
 ```
 
-### generating FID signal
+### FID signal acquisition
 We are going to generate a FID signal map of Nx * Ny * Time, where the first two dimensions stands for every pixel while the third dimension stands for time ( we sample Nx points in the time domain).
 
-1. Notice that our phase encoding is added before the 180° impulse, therefore, **the FID signal does not undergo phase encoding** 
+Notice that our phase encoding is added before the 180° impulse, therefore, **the FID signal does not undergo phase encoding** . However, during the signal acquisition, the FID signal has been frequency encoded.
 ```matlab
 X = width/dy;
 Y = length/dx;
-w = padarray(gamma*Gx/1000*(-X/2:1:(X/2-1)),[0,(Nx-X)/2]); % kHz percession speed in X-direction
-w_map = repmat(w,Ny,1); % kHz percession speed of each pixel
-phase_map = repmat(w_map,1,1,Nx).*permute(repmat(t,Ny,1,Nx),[1,3,2]); % the third dimension is the phase of each time
-FID_map = cos(2*pi*phase_map).*exp(-permute(repmat(t,Ny,1,Nx),[1,3,2]/T2_star); % Nx * Ny *Time FID map with T2* decay
-FID = sum(sum(FID_map)); % FID signal in one loop;
+w = gamma*Gx/1000*(-X/2:1:(X/2-1));% kHz frequency encoded percession speed in X-direction
+w_object = repmat(w,Y,1); % kHz percession speed of each pixel in the object
+phase_map = repmat(w_object,1,1,Nx).*permute(repmat(t,Y,1,X),[1,3,2]); % the third dimension is the phase of each time point
+FID_map = cos(2*pi*phase_map).*exp(-permute(repmat(t,Y,1,X),[1,3,2])/T2_star); % Nx * Ny *Time FID map with T2* decay
+FID_map = padarray(FID_map,[(Ny-Y)/2,(Nx-X)/2,0]);
+figure; plot(t,squeeze(FID_map(100,100,:))); % FID signal of one pixel
+FID = squeeze(sum(sum(FID_map))); % FID signal in one loop;
+figure;plot(t,FID);
+figure; plot(1:Nx,fftshift(fft(FID)));
 ``` 
+The plotted pictures are as follows:
+1) The FID signal of a pixel
+![FID_one_pixel](/assets/img/blog/FID_one_pixel.jpg)
+
+2) The sum of FID signals we acquire
+![Obtained_signal]((/assets/img/blog/FID_signal.jpg)
+
+3) 1D Fourier transformation of acquired signal
+![Fourier_transformation]((/assets/img/blog/fft_FID.jpg)
+
+### Image reconstruction
+OK, now we've got the sum of FID signals in one loop, which can fill in one row of the K-space. Since **our phase encoding is applied before FID signal's generation**, the FID signal won't change in each loop. Therefore, we can easily fill in the whole K-space. After 2D FFT, we can see the fine line in the reconstructed image.
+![reconstruction]((/assets/img/blog/FID_image.jpg)
+
+We also find that the line wasn't limited in the location of our object, and it also occurs in the dark area with lower magnitude. This is probably because there is a **spectrum leakage** while we are sampling the FID signal. The specific reason will not be explained in this article.
+
+### Remove the artifact
+Then, what are we gonna do to remove the artifact? Here, I introduce a method to suppress this fine line artifact. 
+
+
+
+
