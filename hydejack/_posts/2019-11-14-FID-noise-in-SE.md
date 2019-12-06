@@ -36,13 +36,31 @@ Therefore, we can see not all protons in the selected slice can be flipped exact
 ## From FID signal to the fine line
 Then, what does the FID signal have to do with the fine line? Let's deduce their relationship step by step on MATLAB.
 
-To make things easier, let's assume we are now imaging a homogeneous object in the middle of the FOV.
+To make things easier, let's assume we are now imaging a homogeneous object in the middle of the FOV. And the slice we select is only a plane so there is no slice selection.
 ### Setting the parameters
 First, let's set some parameters of the object we are imaging and the image we are expecting to acquire.
 
 ```matlab
 clear all; clc;
-% Object
+
+% Object Parameters
 gamma = 42.58; % MHz/T
-T2 = 300 % ms
+T2 = 300; % ms
+T2_star = 15; % ms
+length = 90; % mm
+width = 90; % mm
+
+% Image parameters
+dx = 1.5; % mm  x_resolution
+dy = 1.5; % mm  y_resolution
+Nx = 128; % 128 x 128 pixels
+Ny = 128;
+FOVx = Nx * dx; % mm
+FOVy = Ny * dy; % mm
+
+% Sequence parameters
+ACQ = 12.8; % ms signal acquisition time
+BW = 1/ (ACQ/Nx); % kHz
+t = 0: ACQ/Nx: (ACQ-ACQ/Nx);
+Gx = BW * 1000 / gamma/ FOVx; % mT/m
 ```
