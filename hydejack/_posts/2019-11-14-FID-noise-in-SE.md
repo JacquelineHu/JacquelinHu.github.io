@@ -21,7 +21,7 @@ SE sequence is a widely used MRI sequence in clinical application. The main feat
 <center><font size="2">SE sequence</font></center>
 
 **Advantages of SE sequence**  
-Theoretically, it can eliminate the extra phase dispersion due to magnetic field's inhomogenity, which means, the time constant of transverse relaxation would be T2 instead of T2* in gradient-rephase sequence. Thus, the signal intensity will be higher during signal acquisition.
+Theoretically, it can eliminate the extra phase dispersion due to magnetic field's inhomogenity, which means, the time constant of the echo decay would be T2 instead of T2* in gradient-rephase sequence. Thus, the signal intensity will be higher during signal acquisition.
 
 
 ## Imperfection of the 180° impulse
@@ -39,3 +39,10 @@ Then, what does the FID signal have to do with the fine line? Let's deduce their
 To make things easier, let's assume we are now imaging a homogeneous object in the middle of the FOV.
 ### Setting the parameters
 First, let's set some parameters of the object we are imaging and the image we are expecting to acquire.
+
+'''
+clear all; clc;
+% Object
+gamma = 42.58; % MHz/T
+T2 = 300 % ms
+'''
