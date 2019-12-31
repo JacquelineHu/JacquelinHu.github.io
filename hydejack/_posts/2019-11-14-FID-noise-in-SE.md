@@ -2,7 +2,6 @@
 title: MRI Notes - FID artifact in SE sequence?
 image: /assets/img/blog/fine_line_artifact.jpg
 description: >
-  Why is there a fine line in the peanut MR image of SE sequence?
 tags: Radiology
 ---
 
@@ -113,7 +112,23 @@ We also find that the line wasn't limited in the location of our object, and it 
 ### Remove the artifact
 Then, what are we gonna do to remove the artifact? Here, I introduce a method to suppress this fine line artifact in imaging part.
 
-To suppress the impact of FID signal, we cannot let it "freely decay". So, after it is induced by the 180° impulse, we can apply an extra gradient to disperse the phase of FID.  
+To suppress the impact of FID signal, we cannot let it "freely decay". So, after it is induced by the 180° impulse, we can apply an extra gradient to disperse the phase of FID. In the meantime, we should also apply an inverse gradient before the 180° impulse to make up for the crusher's influence on the wanted signal. Theoretically, the bigger the area of the gradient is, the better the effect of the artifact elimination will be.
+
+We did another experiment to see how the crusher worked later. Here are the image we obtained without & with the crusher.
+
+Without crusher:
+<br>
+![without crusher](/assets/img/blog/without_crusher.png)
+With crusher:
+<br>
+![with crusher](/assets/img/blog/with_crusher.png)
+
+### Conclusion
+ALright, as we can see in these two pictures, the fine line has been suppressed by the crusher. This is because the FID signal is dispersed, so that it won't influence the image too much. However, we can still see a bright spot in the middle of the image. We tried several methods to eliminate this spot but they all didn't work. I still haven't found out what induces this DC component. Let's see if I can figure it out in the future.
+
+
+
+
 
 
 
